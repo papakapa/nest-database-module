@@ -33,4 +33,4 @@ jobs:
           NODE_OPTIONS: --openssl-legacy-provider
         run: |
           npm set //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}
-          npm run publish
+          npm publish
