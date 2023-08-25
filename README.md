@@ -73,8 +73,6 @@ export class TestRepository {
 
 ```
 
-```
-
 ## Change Log
 
 See [Changelog](CHANGELOG.md) for more information.
