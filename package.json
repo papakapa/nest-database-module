@@ -1,6 +1,6 @@
 {
   "name": "@papakapa/nest-database-module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NestJS Dynamic Database module",
   "author": "Kiryl Kapustsin <kapustin.ks.00@gmail.com>",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "keywords": [
-    "nestjs"
+    "nestjs", "pg"
   ],
   "publishConfig": {
     "access": "public"
