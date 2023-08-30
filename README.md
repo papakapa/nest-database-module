@@ -70,8 +70,33 @@ export class TestRepository {
     return this.postgresService.query(sql, [id]);
   }
 }
-
 ```
+
+`PostgresService.query`: 
+
+```typescript
+await PostgresService.query(
+      'INSERT INTO test(id) VALUES($1);',
+      [test.id],
+    );
+```
+
+`PostgresService.transact`:
+
+```typescript
+const queries = [
+  {
+    sql: 'INSERT INTO test(id) VALUES($1);',
+    params: [test.id],
+  },
+  {
+    sql: 'INSERT INTO test_1(id) VALUES($1);',
+    params: [test1.id],
+  },
+];
+await this.pgService.transact(queries);
+```
+
 
 ## Change Log
 
@@ -79,7 +104,7 @@ See [Changelog](CHANGELOG.md) for more information.
 
 ## Author
 
-**Kiryl Kapustsin**
+[**papakapa**](https://github.com/papakapa)
 
 ## License
 

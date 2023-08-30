@@ -1,6 +1,6 @@
 {
   "name": "@papakapa/nest-database-module",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "NestJS Dynamic Database module",
   "author": "Kiryl Kapustsin <kapustin.ks.00@gmail.com>",
   "license": "MIT",
